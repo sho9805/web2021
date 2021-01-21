@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		div.b{background-color:skyblue;
+			width: 300px;
+			display: inline-block;
+			float: left;
+			margin-right: 10px;
+			padding: 20px;
+			text-align: justify;}
+		div.box
+			{background-color:skyblue;
+				width: 500px;_height: 100px;
+				/*margin-right: auto;
+				margin-left: auto;*/
+				margin:0 auto;}
+		/*div.box>div.box1{float: left;width: 200px;background-color:orange;}
+		div.box>div.box2{float: right;width: 200px;background-color:green;}
+		div.box>div.box3{clear:both;}*/
+		div.box>div.box1{float: left;width:200px;background-color:orange;}
+		div.box>div.box2{float: right;width:200px;background-color:green;}
+		div.box>div.box3{clear: both;}
+
+		div.box10:before{content:"안녕하세요";}
+		div.box10:after{content:"안녕히계세요";
+						display:block;clear: both;}
+
+		.clearfix:after{content:"";display: block;clear: both;}
+	</style>
+</head>
+<body>
+	<div class="b">Lorem ipsum dolor, <br>sit amet consectetur, adipisicing elit. Optio totam nostrum laborum itaque qui ducimus, ad, voluptate rem cum fugit placeat? Molestiae tempora recusandae dicta sunt quas adipisci minus delectus!</div>
+	Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Nostrum adipisci labore reprehenderit, aut hic, numquam expedita! Veritatis, illum autem ratione explicabo nisi vel assumenda numquam laudantium alias laborum. Hic, sit?
+	<img src="../images/testimg.jpg" alt="">
+	<hr>
+	<div class="box clearfix">
+		<!-- div.box$*3>lorem -->
+		<div class="box1">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Modi libero eligendi quod perspiciatis earum exercitationem adipisci saepe tenetur ullam voluptates culpa, temporibus ex fuga magnam quos deserunt ratione explicabo amet?Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Modi libero eligendi quod perspiciatis earum exercitationem adipisci saepe tenetur ullam voluptates culpa, temporibus ex fuga magnam quos deserunt ratione explicabo amet?Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Modi libero eligendi quod perspiciatis earum exercitationem adipisci saepe tenetur ullam voluptates culpa, temporibus ex fuga magnam quos deserunt ratione explicabo amet?</div>
+		<div class="box2">Iste, voluptatem corrupti aperiam eius minus, fugiat in fugit quam odio culpa velit sit voluptas eum laudantium aliquam similique rerum dignissimos enim placeat a at exercitationem debitis! Iure id, distinctio?</div>
+<!-- 		<div class="box3"></div> -->
+	</div>
+
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deserunt ipsa beatae, corrupti voluptas animi enim tempore, nulla, eius hic ex dignissimos tempora atque nihil repellat ab repellendus ratione iusto.
+
+	<div class="box10">10Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore asperiores iste consequuntur doloremque voluptates officia facere corrupti blanditiis ea in doloribus, sit tenetur placeat ipsum unde animi voluptatum esse!
+	</div>
+
+</body>
+</html>

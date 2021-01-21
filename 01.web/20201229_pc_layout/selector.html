@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>selector</title>
+	<style>
+		div{background: pink;
+			border: 1px solid #000;
+			margin-bottom: 5px;}
+
+		/*선택자 다음의 box1를 하나만 선택*/
+		div.box + div.box {_background: red;}
+		/*선택자 다음의 전체를 선택*/
+		div.box ~ div.box1 {background: blue;}
+	</style>
+</head>
+<body>
+	<div class="box">Lorem.</div>
+	<div class="box1">Dignissimos?</div>
+	<div class="box1">Earum.</div>
+	<div class="box1">Aperiam.</div>
+	<div class="box">Doloribus.</div>
+	<div class="box">Doloremque.</div>
+	<div class="box1">Inventore.</div>
+	<div class="box">Numquam.</div>
+	<div class="box">Porro.</div>
+	<div class="box">Officiis.</div>
+</body>
+</html>

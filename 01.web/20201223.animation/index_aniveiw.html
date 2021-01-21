@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>aniview</title>
+	<link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+	<style>
+		.contents ul li{
+			float: left;width: 232px;margin-right: 10px;
+			overflow: hidden;position: relative;
+			cursor:pointer;
+		}
+		.contents ul li:last-child{margin-right: 0;}
+		.contents ul li img{width: 100%;display: block;
+			transition:0.3s;
+		}
+
+		.contents .bg{
+			width: 100%;height: 100%;
+			position: absolute;
+			background:rgba(0,0,0,0.3);opacity:0;
+			transition:0.3s;
+		}
+
+		/*left*/
+		.contents li:nth-child(2) .bg{left:-100%;top:0px;opacity:1;}
+		.contents li:nth-child(2):hover .bg{left:0;}
+		
+		/*top*/
+		.contents li:nth-child(3) .bg{left:0;top:-100%;opacity:1;}
+		.contents li:nth-child(3):hover .bg{top:0;}
+		
+		/*right*/
+		.contents li:nth-child(4) .bg{top:0;right:-100%;opacity:1;}
+		.contents li:nth-child(4):hover .bg{right:0;}
+		
+		/*bottom*/
+		.contents li:nth-child(5) .bg{left:0;bottom:-100%;opacity:1;}
+		.contents li:nth-child(5):hover .bg{bottom:0;}
+/*
+		.contents li:nth-child(1):hover .bg{opacity:1;}
+		.contents li:nth-child(1):hover img{transform:scale(1.1);}*/
+
+		.gray{background:#ccc;}
+	</style>
+
+	<div class="container gray">
+		<div class="contents">
+			<ul class="clearfix">
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="bg">
+					</div>
+				</li>
+				<li>
+					<img src="../images/testimg.jpg" alt="">
+					<div class="bg">
+					</div>
+				</li>
+				<li><img src="../images/testimg.jpg" alt="">
+						<div class="bg">
+					</div>
+				</li>
+				<li><img src="../images/testimg.jpg" alt="">
+						<div class="bg">
+					</div>
+				</li>
+				<li><img src="../images/testimg.jpg" alt="">
+					<div class="bg">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

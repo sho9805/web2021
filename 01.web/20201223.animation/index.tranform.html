@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.boxWrap{width: 500px;height: 500px;background: pink;margin: 0 auto;overflow: hidden;}
+
+		.box{width: 200px;height: 200px;
+			background: skyblue;
+			transform: translate(0px,0px) rotate(0deg)/*각도*/
+			/*transform-origin: 100% 100%*//*중심축을 어디에 둘것이냐.(꼭짓점)*/
+			scale(1)/*크기*/;transition:0.3s;}
+
+		.boxWrap:hover .box{transform:rotate(20deg) scale(2);}
+
+		.contents{width: 1000px;margin: 0 auto;background: #000;}
+		.contents>ul{}
+		.contents>ul>li{float: left;width: 242.5px;
+						margin-right: 10px;
+						overflow: hidden;}
+		.contents>ul>li:last-child{margin-right: 0;}				
+		.contents>ul>li>img{width: 100%;/* li의 위드스 242.5에 맞게 이미지 안잘리고100%로.*/
+							display: block;/*를 해줘야 백그라운드 아랫부분이 안나옴.*/
+							transition: 0.3s;
+							transform-origin:0 0;}
+		.contents>ul>li:hover img{transform: scale(1.1)/*기본값은1, 1.1만큼 커진다는 의미*/;}
+	</style>
+</head>
+<body>
+	<div class="boxWrap">
+		<div class="box"></div>
+	</div>
+
+	<div class="container">
+		<div class="contents">
+			<ul class="clearfix">
+				<li><img src="../images/testimg.jpg" alt=""></li>
+				<li><img src="../images/testimg.jpg" alt=""></li>
+				<li><img src="../images/testimg.jpg" alt=""></li>
+				<li><img src="../images/testimg.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

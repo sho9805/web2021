@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		a:link,a:visited{color: #000;
+						text-decoration: none;}
+	 	li{list-style: none}
+		.clearfix:after{content: "";
+						display:block;
+						clear: both;}
+		/*^^초기값설정한것*/
+		div.box{width: 500px;
+				background-color:skyblue;
+				margin: auto}
+		div.box>div.box1{float: left;
+						background-color:orange;
+						width: 100px;
+						height: 50px;
+						line-height: 50px;}
+		div.box>div.box2{float: right;
+						background-color:green;
+						width: 100px;
+						height: 50px;
+						text-align: right;
+						line-height: 50px;}
+/*		div.box>div.clear{clear: both;}*/
+		/*div.box:after{content:"";
+					display: block;
+					text-decoration: none;}
+		div.nav{width: 500px;background-color:skyblue;
+				margin: 0 auto;}
+		div.nav>ul{width: ;}
+		div.nav>ul>li{float: left;}*/
+	</style>
+</head>
+<body>
+	<div class="box clearfix">
+		<div class="box1">left</div>
+		<div class="box2">right</div>
+<!-- 		<div class="clear"></div> -->
+	</div>
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aliquid architecto fugit neque officiis minus voluptatibus ipsam perferendis, corrupti iusto, corporis nisi dolore praesentium minima itaque et quisquam, amet. Reiciendis!
+</body>
+</html>

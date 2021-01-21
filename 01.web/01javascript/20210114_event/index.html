@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>event</title>
+	<style>
+		
+	html,body{height: 100%;}
+	*{margin: 0;padding: 0;}
+	</style>
+</head>
+<body  >
+	<h2 onclick="mouse(event)" style="background-color:skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eum, porro ab suscipit commodi architecto provident sunt reprehenderit placeat doloremque et quisquam. Iusto aspernatur illum, labore blanditiis optio, et velit!</h2>
+	<h2 onclick="offm(event)" style="border: 1px solid #000;width: 300px;height: 400px;margin-left:50px;">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur quibusdam tempore itaque, sed error at nihil, corporis iste optio ratione iusto beatae quidem? Impedit, laborum tempora dignissimos quis error?</h2>
+	<p id="event"></p>
+	<script>
+		function mouse(e){
+			var x = e.clientX;
+			var y = e.clientY;
+			console.log("X 값 : " + x + ", Y 값 : " + y);
+			var print = "X 값 : " + x + ", Y 값 : " + y;
+			// document.getElementById("event").innerHTML = "X 값 : " + x + ", Y 값 : " + y;
+			document.getElementById("event").innerHTML = print;
+		}
+		function offm(e){
+			var x = e.offsetX;
+			var y = e.offsetY;
+			var print = "X offset 값 : " + x + ", Y offset 값 : " + y;
+			document.getElementById("event").innerHTML = print;
+		}
+	</script>
+</body>
+</html>

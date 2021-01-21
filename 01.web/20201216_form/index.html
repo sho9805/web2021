@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form</title><!-- 어떤 값을 입력 할 때 마다 바뀌는 링크값 잘 보기 -->
+</head>
+<body>
+	<form action="welcome.php" method="post"><!-- method에 get를 넣으면 자료내용(ex:주민번호)이 링크값에 다 나오고, post를 넣으면 숨겨줌. -->
+		<fieldset>
+			<legend>기본정보</legend>
+
+			<label for="name">이름</label>
+			<input type="text" name="na" id="name"> <!-- id=포커스를 맞춰줌label for값과 같게 해주어야 함.(검정박스진하게만들어줬음) -->
+
+			<label for="email">이메일</label>
+			<input type="text" name="email" id="email">
+		</fieldset>
+		<input type="submit">
+	</form>
+</body>
+</html>

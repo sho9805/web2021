@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>onload</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+		window.onload = function(){
+			// 페이지가 완전 로딩후 실행
+			alert("안녕하세요.");
+		};
+
+		window.onload = function(){
+			// 페이지가 완전 로딩후 실행
+			alert("안녕하세요!!!");
+		};
+
+		function gogo(){
+			// 페이지가 완전 로딩후 실행
+			alert("반갑습니다.");
+		}
+		// 자바스크립트는 가장 마지막것만 출력이 됨.
+
+		$(document).ready(function(){
+			// 페이지가 완전 로딩후 실행
+			alert("jquery1");
+		});
+
+		$(document).ready(function(){
+			// 페이지가 완전 로딩후 실행
+			alert("jquery2");
+		});
+		// 제이쿼리는 전부 출력이 가능함.대신 jquery-3.1.1.min.js파일을 꼭 올려주어야 함.
+	</script>
+
+</head>
+<body onload="gogo()">
+</body>
+</html>

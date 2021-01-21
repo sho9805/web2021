@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>modal</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script>
+    /*  $(document).ready(function(){});
+        jquery(document).ready(function(){});
+        $(function(){});
+        3개 다 같은말.  */
+
+        $(function(){
+          /* $("body").append("han").prepend("안녕하세요"); */
+          $("body").append("<div id=\"glayLayer\"></div><div id=\"overLayer\"></div>");
+        });
+  </script>
+
+  <style>
+    .box{width: 100px;height: 100px;background: #f00;}
+    #glayLayer{width: 100px;height: 100px;background: #000;}
+    #overLayer{width: 100px;height: 100px;background: #0f0;}
+    ul.layer{width: 470px;margin: 0 auto;}
+    ul.layer li{float: left;margin-right: 10px;width: 150px;}
+    ul.layer li:nth-child(3,6){margin-right: 0;}
+  </style>
+</head>
+
+<body>
+  <body>
+    <!-- <div class="box"></div> -->
+    <ul class="layer">
+      <li>
+        <a href="../images/tourgallery_j1a.jpg" class="modal">
+          <img src="../images/tourgallery_j1.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="../images/tourgallery_j2a.jpg" class="modal">
+          <img src="../images/tourgallery_j2.jpg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="../images/tourgallery_j3a.jpg" class="modal">
+          <img src="../images/tourgallery_j3.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="../images/tourgallery_j4a.jpg" class="modal">
+          <img src="../images/tourgallery_j4.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="../images/tourgallery_j5a.jpg" class="modal">
+          <img src="../images/tourgallery_j5.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="../images/tourgallery_j6a.jpg" class="modal">
+          <img src="../images/tourgallery_j6.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+
+  </body>
+  </html>
