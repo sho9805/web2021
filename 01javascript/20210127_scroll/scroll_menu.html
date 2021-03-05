@@ -9,7 +9,7 @@
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/jquery.mousewheel.min.js"></script>
   <style>
-  nav.menu{width:100%;background: #cdcdcd;}
+  nav.menu{width:100%;background: pink;}
   nav.menu.fixed{position: fixed;background:skyblue;}
 
   nav.menu ul{width: 1000px;margin: 0 auto}
@@ -23,8 +23,7 @@
         console.log(delta);
         $(window).scroll(function(){
           var scrollY = $(window).scrollTop();
-
-          if(scrollY > 200){
+          if(scrollY>200){
             if(delta>0){
               $(".menu").addClass("fixed");
             }else{
