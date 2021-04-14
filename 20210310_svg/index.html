@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{background:skyblue;}
+    .svg{
+      width: 300px;height: 300px;
+      background-image: url(star.svg);
+      background-color:orange;
+    }
+    .st0{
+      fill:#FF0000;transition:0.3s;
+      }
+
+    .star1 path{
+      fill:#fff;
+      stroke:#f0f;
+      stroke-width:20;
+      stroke-dasharray:2280;
+      stroke-dashoffset:2280
+
+    }
+    .star1:hover .st0{fill:#00ff00}
+    .star1{width: 200px;height: 200px;background:blue;}
+  </style>
+</head>
+<body>
+  <img src="star.svg" alt="">
+  <div class="svg"></div>
+  <div class="star1">
+    <svg x="0" y="0" width="100%" height="100%" viewBox="0 0 500 500">
+      <g>
+      	<polygon class="st0" points="193,283.7 100.7,216.6 214.8,216.6 250,108.2 285.2,216.6 399.3,216.6 307,283.7 342.3,392.1
+      		250,325.1 157.7,392.1 	"/>
+      	<path class="han"  d="M250,109.8l34.6,106.6l0.2,0.7h0.7h112.1L307,283l-0.6,0.4l0.2,0.7l34.6,106.6l-90.7-65.9l-0.6-0.4l-0.6,0.4l-90.7,65.9
+      		l34.6-106.6l0.2-0.7L193,283l-90.7-65.9h112.1h0.7l0.2-0.7L250,109.8 M250,106.6l-35.6,109.6H99.2l93.2,67.7l-35.6,109.6l93.2-67.7
+      		l93.2,67.7l-35.6-109.6l93.2-67.7H285.6L250,106.6L250,106.6z"/>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+  .circle{width: 100px;height: 100px;}
+  .circle  circle{
+    stroke:#000;
+    fill:#f0f;
+    stroke-width:5;
+    stroke-dasharray:2280;
+    stroke-dashoffset:2280;
+
+
+    animation-fill-mode:forwards;
+    animation-duration:3s;
+    animation-direction:alternate;
+  }
+
+  .circle:hover circle{
+    animation-name:ani;
+  }
+
+  @keyframes ani{
+    from{stroke-dashoffset:2280}
+    to{stroke-dashoffset:0}
+  }
+
+
+  .circle:hover circle{
+
+  }
+  </style>
+  <div class="circle">
+    <svg x="0" y="0" width="100%" height="100%" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="45"></circle>
+    </svg>
+  </div>
+
+</body>
+</html>
